@@ -1,0 +1,314 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Connection Matcher</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #fff5f7;
+            color: #555;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(255, 105, 140, 0.1);
+        }
+        h4 {
+            color: #ff6b8b;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px rgba(255, 107, 140, 0.2);
+        }
+        .search-section {
+            background: linear-gradient(135deg, #fff0f3 0%, #fff9fa 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid #ffd6e0;
+        }
+        .result-section {
+            padding: 25px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #f0fff4 0%, #f9fff9 100%);
+            border: 1px solid #d4ffdf;
+            min-height: 150px;
+            display: none;
+            transition: all 0.3s ease;
+        }
+        button {
+            background: linear-gradient(to right, #ff6b8b, #ff8e9e);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(255, 107, 140, 0.2);
+        }
+        button:hover {
+            background: linear-gradient(to right, #ff5a7e, #ff7e8e);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255, 107, 140, 0.3);
+        }
+        .search-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .search-input input {
+            flex-grow: 1;
+            padding: 14px;
+            border: 1px solid #ffd6e0;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #fff9fa;
+            transition: all 0.3s ease;
+        }
+        .search-input input:focus {
+            outline: none;
+            border-color: #ff8e9e;
+            box-shadow: 0 0 0 3px rgba(255, 107, 140, 0.1);
+        }
+        .search-options {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .search-options label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: white;
+            padding: 12px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1px solid #ffd6e0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .search-options label:hover {
+            border-color: #ff8e9e;
+        }
+        .search-options input[type="radio"] {
+            accent-color: #ff6b8b;
+            margin: 0;
+            width: 18px;
+            height: 18px;
+        }
+        .result-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b8b;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        .result-item strong {
+            color: #ff6b8b;
+            font-weight: 600;
+        }
+        .result-item p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        .instructions {
+            background-color: #fff9f2;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 4px solid #ffb347;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+        }
+        .instructions h3 {
+            color: #ff8e5e;
+            margin-top: 0;
+        }
+        .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin-bottom: 8px;
+        }
+        .heart-icon {
+            color: #ff6b8b;
+            margin: 0 5px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .search-input {
+                flex-direction: column;
+            }
+            .search-options {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+  
+        <h4 style="center">
+          ❤️ ESM BROSIS 2025❤️</h4>
+          <h4>PARTNER</h4>
+        
+        <div class="instructions">
+            <h3>How to Find Your Match:</h3>
+            <ol>
+                <li>Select whether you have a <strong>Male</strong> or <strong>Female</strong>  number</li>
+                <li>Enter your phone number in the search box</li>
+                <li>Discover your matching partner's information</li>
+            </ol>
+        </div>
+        
+        <div class="search-section">
+            <h2 style="color: #ff6b8b; text-align: center;">Find Your Match</h2>
+            <div class="search-options">
+                <label>
+                    <input type="radio" name="searchType" value="male" checked> 
+                    <span style="color: #4a6fa5;">Male</span>
+                </label>
+                <label>
+                    <input type="radio" name="searchType" value="female"> 
+                    <span style="color: #d45d79;">Female</span>
+                </label>
+            </div>
+            <div class="search-input">
+                <input type="text" id="searchInput" placeholder="Enter phone number...">
+                <button id="searchBtn">Find My Match <span class="heart-icon">❤</span></button>
+            </div>
+        </div>
+        
+        <div id="resultSection" class="result-section">
+            <h2 style="color: #4a9f8e; text-align: center;">Match Found!</h2>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script>
+        // Predefined data dictionary based on the Excel file
+        const data =[
+            { male_name: "Odeyale Praise Olamide", male_number: "09076244112", female_name: "Ige ayomide temitope", female_number: "08030916769" },
+            { male_name: "Ajibose oluwaferanmi", male_number: "08100272197", female_name: "Rotimi olabisi", female_number: "08082885954" },
+            { male_name: "Philips precious", male_number: "09025957548", female_name: "Titiloye boluwatife oluwafunmilayo", female_number: "08135558627" },
+            { male_name: "Owolabi Joshua", male_number: "09164082165", female_name: "Atunde omobolanle", female_number: "08145105636" },
+            { male_name: "Adetunji favour", male_number: "09022697436", female_name: "Afolabi inioluwa", female_number: "08082772202" },
+            { male_name: "Akanbi Israel", male_number: "09079977352", female_name: "Osareti success", female_number: "09022124165" },
+            { male_name: "Jinadu john", male_number: "08144703326", female_name: "Ifeloluwa gbayi", female_number: "08024904590" },
+            { male_name: "Praise oluwadamilola owa", male_number: "09164868867", female_name: "Boluwatife omotola onisola", female_number: "08135753499" },
+            { male_name: "Alao Michael toluwanimi", male_number: "08107497947", female_name: "Balogun hope oluwatomisin", female_number: "08109876274" },
+            { male_name: "Olaniyan Samuel olayinka", male_number: "08109946330", female_name: "Olayinka mary oluwatoyin", female_number: "09130605456" },
+            { male_name: "Emmanuel Richard", male_number: "08140823779", female_name: "Adeniji omolara omowunmi", female_number: "07012004836" },
+            { male_name: "Madamidola inioluwa", male_number: "09130507212", female_name: "Bamidele esther", female_number: "09063569573" },
+            { male_name: "Olatunji victor", male_number: "08136566259", female_name: "Orisatola prisiclla oluwabukola", female_number: "07054302945" },
+            { male_name: "Oloruntoba omogbolahan", male_number: "08035293099", female_name: "Julius oluwatimileyin", female_number: "08156532946" },
+            { male_name: "Gbadamosi babatunde oluwatobi", male_number: "08056295675", female_name: "Akande Hannah", female_number: "07016524688" },
+            { male_name: "Akande toluwase peter", male_number: "07052468108", female_name: "Adeniyi oluwamayokun jemimah", female_number: "08121552897" },
+            { male_name: "Olutimilehin obaloluwa", male_number: "07036984386", female_name: "Rufus eniola favour", female_number: "08020968662" },
+            { male_name: "Afolabi joseph jesuferanmi", male_number: "07034316643", female_name: "Simon precious", female_number: "08127938647" },
+            { male_name: "Alade oluwagbolahan", male_number: "08082910598", female_name: "Olawoye oluwadunsin oluwafolakemi", female_number: "07070345222" },
+            { male_name: "Ibiyeye temitayo", male_number: "08149135114", female_name: "Olukokun Taye precious", female_number: "08024827593" },
+            { male_name: "Olaitan peace", male_number: "08161243714", female_name: "Akinnubi funmilayo rachael", female_number: "09162471506" },
+            { male_name: "Oladele segun", male_number: "07045858200", female_name: "Bello kanyinsola julianah", female_number: "08160253510" },
+            { male_name: "Adekunle gbenga oluwaferanmi", male_number: "09040362530", female_name: "Bello busayo", female_number: "08024281200" },
+            { male_name: "Omoniyi olumide Sunday", male_number: "07010067954", female_name: "Owolabi temitope mercy", female_number: "09050678699" },
+            { male_name: "Olalere olawale john", male_number: "07049090122", female_name: "Ajiboye ajoke mercy", female_number: "09132597296" },
+            { male_name: "Bello Emmanuel ayomide", male_number: "09164610571", female_name: "Sunday mercy ebunoluwa", female_number: "07063223668" },
+            { male_name: "Ajayi Godwin Oluwatunmishe", male_number: "09013459030", female_name: "Adekeye precious oyindamola", female_number: "07068941254" },
+            { male_name: "Arowoduye pelumi", male_number: "08142150183", female_name: "Dada oyindamola anuoluwapo", female_number: "09035253533" },
+            { male_name: "Oluwasegun Ogunrinde", male_number: "08154868567", female_name: "Odeyemi oluwabusayomi", female_number: "08064684253" },
+            { male_name: "Ajibola Michael", male_number: "08076983677", female_name: "Sanni Tofunmi", female_number: "07038613154" },
+            { male_name: "Lawalson testimony moses", male_number: "08059571645", female_name: "Olaitan peace", female_number: "08141763601" },
+            { male_name: "Paul oluwatobi onilehran", male_number: "07041471771", female_name: "Oludare oluwatoyin Hannah", female_number: "08169912415" },
+            { male_name: "Okeleye ayomide Abraham", male_number: "09018402219", female_name: "Olayinka Deborah omotolani", female_number: "08029223681" },
+            { male_name: "Abogunrin iyanuoluwa", male_number: "08144609301", female_name: "Oyesiji opeyemi", female_number: "09067515475" },
+            { male_name: "Osareti desmond", male_number: "09054468128", female_name: "Salami obasekemi", female_number: "09061718272" },
+            { male_name: "Okanlawon olatunbosun Stephen", male_number: "08131244575", female_name: "Samson julianah", female_number: "08136004099" },
+            { male_name: "Olorunshola Samuel", male_number: "08162640330", female_name: "Tanimowo Janet omolade", female_number: "09030139864" },
+            { male_name: "Olatunji segun", male_number: "09054508626", female_name: "Adeyeye comfort oluwayemisi", female_number: "08143343368" },
+            { male_name: "Thomas Onesimus", male_number: "09138623553", female_name: "Ishola Victoria oluwafunke", female_number: "09061391844" }
+        ];
+
+        document.getElementById('searchBtn').addEventListener('click', function() {
+            const searchInput = document.getElementById('searchInput').value.trim();
+            const searchType = document.querySelector('input[name="searchType"]:checked').value;
+            
+            if (!searchInput) {
+                alert('Please enter a phone number to search.');
+                return;
+            }
+            
+            let result;
+            if (searchType === 'male') {
+                result = data.find(row => String(row.male_number) === searchInput);
+                if (result) {
+                    document.getElementById('results').innerHTML = `
+                        <div class="result-item">
+                            <p><strong>My Number:</strong> ${result.male_number}</p>
+                            <p><strong>My Name:</strong> ${result.male_name || 'N/A'}</p>
+                        </div>
+                        <div class="result-item" style="border-left-color: #d45d79;">
+                            <p><strong>Match Number:</strong> ${result.female_number}</p>
+                            <p><strong>Match Name:</strong> ${result.female_name || 'N/A'}</p>
+                        </div>
+                    `;
+                } else {
+                    document.getElementById('results').innerHTML = `
+                        <div class="result-item">
+                            <p>No match found for his number: ${searchInput}</p>
+                        </div>
+                    `;
+                }
+            } else {
+                result = data.find(row => String(row.female_number) === searchInput);
+                if (result) {
+                    document.getElementById('results').innerHTML = `
+                        <div class="result-item" style="border-left-color: #d45d79;">
+                            <p><strong>My Number:</strong> ${result.female_number}</p>
+                            <p><strong>My Name:</strong> ${result.female_name || 'N/A'}</p>
+                        </div>
+                        <div class="result-item">
+                            <p><strong> Match Number:</strong> ${result.male_number}</p>
+                            <p><strong>Match Name:</strong> ${result.male_name || 'N/A'}</p>
+                        </div>
+                    `;
+                } else {
+                    document.getElementById('results').innerHTML = `
+                        <div class="result-item">
+                            <p>No match found for her number: ${searchInput}</p>
+                        </div>
+                    `;
+                }
+            }
+            
+            // Show results section with animation
+            const resultSection = document.getElementById('resultSection');
+            resultSection.style.display = 'block';
+            setTimeout(() => {
+                resultSection.style.opacity = '1';
+                resultSection.style.transform = 'translateY(0)';
+            }, 10);
+            
+            // Clear search input
+            document.getElementById('searchInput').value = '';
+        });
+    </script>
+    <footer style="color:orange;font-size:2px">powered by dafx & neotimmy</footer>
+</body>
+</html>
